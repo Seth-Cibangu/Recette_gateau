@@ -10,8 +10,8 @@ p.categorie {background-color: black; color: #fff;
                 font-size: 16px;}
 
 div.contenu {background-color: white;
-            margin: 0px 10% 80px 10%;
-            padding: 25px;
+            margin: 0px 8px 40px 8px;
+            padding: 0px 8px 20px 8px;
             box-shadow: 0px 0px 10px 2px black }
 
 h1 {text-align: center;
@@ -39,17 +39,17 @@ div.infos{position: relative;}
 
 table.infos{position: absolute; bottom:0; 
             width: 100%; color: white;
-            background-color:#6C829DC0; height:80px}
+            background-color:#6C829DC0; height:50px}
 
 table.infos td{text-align:center;
-                font-size:14px;}
+                font-size:12px;}
 
-table.infos th{font-size:16px;}
+table.infos th{font-size:14px;}
 
 img.info{display: block;max-height:400px; 
         object-fit:cover; min-height:200px}
 
-div.colonne{width:45%; margin-top:20px}
+div.colonne{width:100%; margin-top:20px}
 
 div.colonne h2{text-align:center;
                text-transform: uppercase;
@@ -58,10 +58,8 @@ div.colonne h2{text-align:center;
                padding-bottom:5px}
 
 div.colonne1{display:inline-block;
-            margin-right:10%}
-            
+            }
 
-div.colonne2{float: right;}
 
 div.ingredients p{border: 1px solid lightgray;
                   font-size:14px;
@@ -91,3 +89,33 @@ table.preparation td.preparation_etape{font-size: 14px;
 table.preparation tr{height:50px}
 
 *{overflow: auto}
+
+@media only screen and (min-width: 768px) {
+    div.contenu {min-width: 350px;
+                 margin: 0px 10% 80px 10%;
+                 padding: 25px;
+                }
+
+    table.infos{height:80px}
+
+    table.infos td{font-size:14px;}
+
+    table.infos th{font-size:16px;}
+
+    div.colonne{width:45%;}
+
+    div.colonne1{margin-right:10%}
+            
+            
+    div.colonne2{float: right;}
+
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {margin-left: auto;
+                 margin-right: auto;
+                 width:644px
+                }
+                 
+
+}
